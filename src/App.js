@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import {RouterProvider} from "react-router-dom";
-import {router} from "./router/route";
+import Routers from "./router/Routers";
+import "./App.css";
 
 function App() {
   return (
-      <RouterProvider router={router} />
+    <>
+      <Routers />
+    </>
   );
 }
 

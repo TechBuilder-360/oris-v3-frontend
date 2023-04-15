@@ -1,10 +1,11 @@
 import {createBrowserRouter} from "react-router-dom";
-import Home from "../Screens";
+import Home from "../screens";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Home/>,
+
     },
     {
         path: "/home",
