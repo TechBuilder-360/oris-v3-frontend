@@ -1,12 +1,12 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-const PublicRoute = ({ children }) => {
+const PublicRoute = () => {
   const role = sessionStorage.getItem("role");
   const auth = sessionStorage.getItem("token");
-  if (!auth || auth === "undefined") {
-    return children;
-  }
+  // if (!auth || auth === "undefined") {
+  //   return children;
+  // }
 
   if (role === "admin") {
     return <Navigate to="/dashboard/admin" />;
